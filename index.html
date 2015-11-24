@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ALU</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
+          integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ=="
+          crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"
+            integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ=="
+            crossorigin="anonymous"></script>
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab|Titillium+Web' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="row">
+
+<header>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+               
+                <img src="img/logo_iim.png" alt="" class="col-lg-7 col-md-4 col-sm-4 col-xs-4 "/>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Accueil</a></li>
+                    <li class="dropdown">
+                        <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                           aria-expanded="false">Chapitres <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Chapitre 1</a></li>
+                            <li><a href="#">Chapitre 2</a></li>
+                            <li><a href="#">Chapitre 3</a></li>
+                            <li><a href="#">Chapitre 4</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">A Propos</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+</header>
+
+<section class="container-fluid">
+
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="video-intro">
+        <!--            vidéo d'introduction-->
+        <h2>video</h2>
+    </div>
+</section>
+
+<section class="title container-fluid text-center">
+    <section class="row">
+        <div id="title-chapitre">
+            <h1 class="roboto">A simple Microprocessor</h1>
+        </div>
+        <div id="intro">
+            <div class="container text-justify titilium">
+                We describe here a 8-bit microprocessor for educational purpose called SRISC8. The processor runs
+                (executes) instructions, which are stored as machine code in its main memory. It is composed of three
+                parts: an arithmetic and logical unit, a bank of registers and a control unit.
+            </div>
+        </div>
+    </section>
+</section>
+
+<section id="content" class="container">
+    <section class="row">
+
+        <div id="part1">
+            <div class="section-title">
+                <h2 class="text-center roboto">ARITHMETIC AND LOGICAL UNIT</h2>
+                <hr class="section-bar">
+            </div>
+
+            <div class="section-content">
+                <p class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-justify titilium">
+                    The ALU (Arithmetic and Logical Unit) is the central part of the processor. It takes two binary
+                    numbers
+                    as inputs, called S1 and S2, and produces an output D by applying one of its arithmetic or logical
+                    operations.</p> 
+                    <br><br>
+                     <div class="section-content-img">
+                    <img src="img/cours.png" alt="" class="img-responsive cours"/>
+                </div>
+                    <br><br>
+                <p class="ligne col-lg-12 col-md-12 col-sm-12 col-xs-12 text-justify titilium">    Arithmetic operations include adding two numbers, incrementing
+                    and decrementing a value.
+                    Logical operations include one's complement, logical and, inclusive and exclusive or, and left
+                    rotation.
+                </p>
+
+            </div>
+        </div>
+        <div id="part3">
+            <div class="section-title">
+                <h2 class="text-center roboto">BANK OF REGISTERS</h2>
+                <hr class="section-bar">
+            </div>
+
+            <div class="section-content">
+                <p class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-justify titilium">
+                    Registers are fast access memory cells used for storing 8-bit numbers before and after computation
+                    by the ALU. There are four general-purpose registers: A, B, C and D. Register A (Accumulator) is the
+                    implicit destination register used in most operations. There are four registers for address
+                    manipulation: M1 and M2 (Memory Address), LR (Link Register) and SP (Stack Pointer) which are used
+                    for implementing function calls and returns.
+                </p>
+
+                <div class="section-content-img">
+                    <img src="img/cours1.png" alt="" class="ligne img-responsive cours"/>
+                </div>
+            </div>
+        </div>
+
+        <div id="part2">
+            <div class="section-title">
+                <h2 class="text-center roboto">CONTROL UNIT</h2>
+                <hr class="section-bar">
+            </div>
+
+            <div class="section-content">
+                <p class="ligne col-lg-12 col-md-12 col-sm-12 col-xs-12 text-justify titilium">
+                   The Control Unit reads instructions from the main memory and controls their execution.
+                   It contains two dedicated registers: PC (Program Counter) 
+                   holding the address of the current instruction in main memory, 
+                   and IR (Instruction Register) which contains its machine code. 
+                   It also maintains binary flags that give information about the current operation: Z (Zero), C (Carry) and N (Negative). 
+                   After the execution, the control unit increments the PC in order to fetch (read) the next instruction.
+                </p>
+            </div>
+        </div>
+
+
+
+    </section>
+        <div id="test" class="text-center">
+             <button type="button" class="btn btn-warning">TEST YOUR KNOWLEDGE</button>
+        </div>
+
+</section>
+
+<section class="container-fluid">
+    <footer class="text-center roboto">
+        <h3>MOOC - IIM - 2015</h3>
+    </footer>
+</section>
+
+</body>
+</html>
