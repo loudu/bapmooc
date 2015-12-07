@@ -1,0 +1,90 @@
+.roboto {
+    font-family: 'Roboto Slab', serif;
+}
+
+.titilium {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.navbar {
+    margin-bottom: 0;
+}
+
+.cours {
+    margin-left: 500px;
+}
+
+.cours1 {
+    margin-left: 400px;
+}
+.ligne {
+    margin-bottom: 53px;
+}
+
+body {
+    overflow-x: hidden;
+}
+#video-intro {
+    background-color: #000;
+    height: 500px;
+}
+
+h1 {
+    margin-top: 0;
+    background-color: #185A7D;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 2%;
+    margin-bottom: 0;
+}
+
+#intro {
+    background-color: #dadada;
+    font-size: 1.7em;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+#content{
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+h2 {
+    color: #b62a2a;
+}
+
+.section-bar {
+    border: solid 2px #FFA500;
+    width: 25%;
+}
+
+p {
+    font-size: 1.7em;
+}
+
+#test{
+    margin-top: 2%;
+}
+
+#test button{
+   background-color: #FFA500;
+    color: #ffffff;
+    border: none;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -ms-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+#test button:hover{
+    background-color: rgba(253, 192, 48, 1);
+}
+
+footer{
+    background-color: #185A7D;
+    color: #ffffff;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}

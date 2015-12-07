@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ALU</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
+          integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ=="
+          crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"
+            integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ=="
+            crossorigin="anonymous"></script>
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab|Titillium+Web' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="row">
+
+<header>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+               
+                <img src="img/logo_iim.png" alt="" class="col-lg-7 col-md-4 col-sm-4 col-xs-4 "/>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Accueil</a></li>
+                    <li class="dropdown">
+                        <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                           aria-expanded="false">Chapitres <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Chapitre 1</a></li>
+                            <li><a href="#">Chapitre 2</a></li>
+                            <li><a href="#">Chapitre 3</a></li>
+                            <li><a href="#">Chapitre 4</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">A Propos</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+</header>
+
+<section class="container-fluid">
+
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="video-intro">
+        <!--            vidéo d'introduction-->
+        <h2>video</h2>
+    </div>
+</section>
+
+<section class="title container-fluid text-center">
+    <section class="row">
+        <div id="title-chapitre">
+            <h1 class="roboto">The DATAPATH</h1>
+        </div>
+        <div id="intro">
+            <div class="container text-justify titilium">
+             The ALU and the bank of registers are tightly coupled using two source buses (S1, S2) and a destination bus (D). These buses are electrical wires with multiple connections which allow to transfer 8 bits in parallel.
+
+This connection scheme is called the datapath. The datapath is important since it structures the data flow as well as the organization of the silicon chip and it's efficiency.
+            </div>
+        </div>
+    </section>
+</section>
+
+<section id="content" class="container">
+    <section class="row">
+
+        <div id="part1">
+            <div class="section-title">
+                <h2 class="text-center roboto">Execution of a typical instruction </h2>
+                <hr class="section-bar">
+            </div>
+
+            <div class="section-content">
+                <p class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-justify titilium">
+                The execution of a typical instruction is broken into a small number of micro-operations, since it generally takes too long to do all steps in a single machine cycle.The Control Unit begins by reading a new instruction from the main memory (Fetch), and translates it in hardware commands such as the operation code for the ALU and the registers that will be used (Decode). The contents of the selected registers are read and held in buffers (Read). Then these binary values go though the ALU, which applies the selected operation (Execute). </p> 
+                    <br><br>
+                     <div class="section-content-img">
+                    <img src="img/cours.png" alt="" class="img-responsive cours"/>
+                </div>
+                    <br><br>
+                <p class="ligne col-lg-12 col-md-12 col-sm-12 col-xs-12 text-justify titilium">     The last step writes back the result in the selected destination register (Write). Finally, the Program Counter is incremented (+ 1) and a new cycle begins with the next instruction.
+                </p>
+
+            </div>
+        </div>
+       <div id="part1">
+            <div class="section-title">
+                <h2 class="text-center roboto">A reduced set of instructions</h2>
+                <hr class="section-bar">
+            </div>
+            <div class="section-content">
+                <p class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-justify titilium">
+                In order to meet the goals of simplicity and efficiency, SRISC8 is based on the Reduced Instruction Set Computer (RISC) architecture principles:
+
+Execute one instruction per cycle.
+Make all instructions the same size (8-bit in our case).
+Access memory only with load-store instuctions, the rest operate between registers.
+Support high-level languages by including the most occurrent operations
+                </p>
+                
+     <div id="part1">
+            <div class="section-title">
+                <h2 class="text-center roboto">A complete set of instructions </h2>
+                <hr class="section-bar">
+            </div>
+            <div class="section-content">
+                <p class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-justify titilium">
+                Even if the number of instructions is small, the set must include all the necessary operations for writing any possible program. This results in a total of 16 instructions classed in three groups:
+
+Arithmetic and logical instructions.
+Memory access instructions.
+Control flow instructions.
+                </p>
+                
+               <div id="part1">
+            <div class="section-title">
+                <h2 class="text-center roboto">Arithmetic and logical instructions </h2>
+                <hr class="section-bar">
+            </div> 
+            <div class="section-content">
+<p class="ligne col-lg-12 col-md-12 col-sm-12 col-xs-12 text-justify titilium">The first group includes mathematical and logical operations: ADD, INC, DEC, MOV, NOT, AND, LOR, XOR, ROT. These operations are performed by the ALU as shown by the animated illustration of the previous page.
+
+For example, the ADD instruction adds the content of register A with the content of another operand register and writes back the result in register A. The Zero, Carry and Negative flags are updated depending on the result of the operation. </p>
+             
+              <br><br>
+                     <div class="section-content-img">
+                    <img src="img/cours3.png" alt="" class="img-responsive cours"/>
+                </div>
+                    <br><br>
+              
+            </div>
+        </div>
+
+    </section>
+        <div id="test" class="text-center">
+             <button type="button" class="btn btn-warning">TEST YOUR KNOWLEDGE</button>
+        </div>
+
+</section>
+
+<section class="container-fluid">
+    <footer class="text-center roboto">
+        <h3>MOOC - IIM - 2015</h3>
+    </footer>
+</section>
+
+</body>
+</html>

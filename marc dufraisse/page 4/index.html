@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ALU</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
+          integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ=="
+          crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"
+            integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ=="
+            crossorigin="anonymous"></script>
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab|Titillium+Web' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="row">
+
+<header>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+               
+                <img src="img/logo_iim.png" alt="" class="col-lg-7 col-md-4 col-sm-4 col-xs-4 "/>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Accueil</a></li>
+                    <li class="dropdown">
+                        <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                           aria-expanded="false">Chapitres <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Chapitre 1</a></li>
+                            <li><a href="#">Chapitre 2</a></li>
+                            <li><a href="#">Chapitre 3</a></li>
+                            <li><a href="#">Chapitre 4</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">A Propos</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+</header>
+
+<section class="container-fluid">
+
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="video-intro">
+        <!--            vidéo d'introduction-->
+        <h2>video</h2>
+    </div>
+</section>
+
+<section class="title container-fluid text-center">
+    <section class="row">
+        <div id="title-chapitre">
+            <h1 class="roboto">BASIC PRINCIPLES</h1>
+        </div>
+        <div id="intro">
+            <div class="container text-justify titilium">
+           Computers work on the principle of number manipulation. People commonly use a decimal (base 10) numbering system, that is one counts from 0 to 9 before adding another digit.
+
+Computers use a simpler binary numbering system (base 2). Counting in binary is similar to counting in decimal, but there are only two values for a specific digit: 0 and 1. For example, counting from 0 to 3 is: 00, 01, 10, 11.  
+            </div>
+        </div>
+    </section>
+</section>
+
+<section id="content" class="container">
+    <section class="row">
+
+        <div id="part1">
+            <div class="section-title">
+                <h2 class="text-center roboto">Bits and bytes</h2>
+                <hr class="section-bar">
+            </div>
+
+            <div class="section-content">
+                <p class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-justify titilium">
+                Inside the computer, binary numbers are represented using bits and bytes. A bit is the implementation of a binary single digit in digital electronic circuitry used by almost all modern computers.
+
+A byte is a group of 8 bits (also called octet). 8-bit is a convenient power of two permitting the values 0 through 255 or -128 through +127 for signed numbers. Negative numbers uses two's complement: invert all the bits and then add 1 to the result, thus 00000001 still represents +1 and 11111111 represents -1. </p> 
+                    <br><br>
+                     <div class="section-content-img">
+                    <img src="img/cours.png" alt="" class="img-responsive cours"/>
+                </div>
+                    <br><br>
+                <p class="ligne col-lg-12 col-md-12 col-sm-12 col-xs-12 text-justify titilium">    Hexadecimal notation
+
+A more human-friendly representation of binary values is the hexadecimal numeral system (base 16). It uses 16 symbols : 0-9 and A-F to represent values 0 to 15. Below is a conversion table in binary, decimal and hexadecimal:
+
+					
+Thus a byte is more conveniently represented as two hexadecimal digits in the range of 00 to FF. We often add the prefix 0x in order to avoid confusion with decimal numbers.
+                </p>
+
+            </div>
+        </div>
+        <div id="part3">
+            <div class="section-title">
+                <h2 class="text-center roboto">Characters and strings</h2>
+                <hr class="section-bar">
+            </div>
+
+            <div class="section-content">
+                <p class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-justify titilium">
+                Historically, the byte is also the number of bits used to encode a single character of text using the American Standard Code for Information Interchange (ASCII). It includes definitions for 128 characters (see ASCII printable characters). This convention enables computers to deal not only with numbers but also with texts.
+
+Texts are composed of strings of characters. The NULL character (code 00) indicates the end of a string. For example, the string "Hello!" is coded by the following sequence of 13 bytes:
+
+48 65 6C 6C 6F 21 00.
+                </p>
+
+                <div class="section-content-img">
+                    <img src="img/cours1.png" alt="" class="ligne img-responsive cours"/>
+                </div>
+            </div>
+        </div>
+
+        <div id="part2">
+            <div class="section-title">
+                <h2 class="text-center roboto"> Programs and machine code </h2>
+                <hr class="section-bar">
+            </div>
+
+            <div class="section-content">
+                
+<p class="ligne col-lg-12 col-md-12 col-sm-12 col-xs-12 text-justify titilium">A program generally consists of data, including numbers and text strings, and a sequence of instructions that tells the computer what to do.
+
+At the lower level, the instructions are binary numbers stored in the main memory. Each instruction is a binary machine code composed of one or more bytes that encodes the operation to be executed.
+
+The machine code depends on the processor. Each type of processor has it's own specific instruction set.</p>
+             
+              <br><br>
+                     <div class="section-content-img">
+                    <img src="img/cours3.png" alt="" class="img-responsive cours1"/>
+                </div>
+                    <br><br>
+
+            </div>
+        </div>
+
+    </section>
+        <div id="test" class="text-center">
+             <button type="button" class="btn btn-warning">TEST YOUR KNOWLEDGE</button>
+        </div>
+
+</section>
+
+<section class="container-fluid">
+    <footer class="text-center roboto">
+        <h3>MOOC - IIM - 2015</h3>
+    </footer>
+</section>
+
+</body>
+</html>
