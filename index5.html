@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Memory access</title>
+    <title>The future of computers </title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
           integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ=="
@@ -69,20 +69,11 @@
 <section class="title container-fluid text-center">
     <section class="row">
         <div id="title-chapitre">
-            <h1 class="roboto">Memory access instructions</h1>
+            <h1 class="roboto">A prospective look into the future of computing</h1>
         </div>
         <div id="intro">
             <div class="container text-justify titilium">
-             The second group enables a program to read and write data in the main memory. All other instructions deal only with registers.It includes three instructions which are dedicated to memory load and store : LDI,LDM,STM.
-         </br>
-
-             LDI loads the byte from memory which is located just after the instruction itself.Thus,the next instruction to be executed must be after that address.
-
-         </br>
-
-             LDM loads the byte from memory which is located at the address pointed out by one of the address registers.
-</br>
-             STM works the same way as LMD but writes to memory instead of reading.
+          <img>
             </div>
         </div>
     </section>
@@ -93,17 +84,23 @@
 
         <div id="part1">
             <div class="section-title">
-                <h2 class="text-center roboto">Control flow instructions</h2>
+                <h2 class="text-center roboto">Moore's law</h2>
                 <hr class="section-bar">
             </div>
 
             <div class="section-content">
                 <p class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-justify titilium">
-                 Usually, instructions are executed in the order they appear in memory. The Program Counter ( PC ) points to the current instruction and is incremented after each cycle.<br>
-                 However, in order to do complicated things,the processor must be able to decide what the next instruction is going to be.This ability to execute different instructions depending on something's outcome is called <i>Branching</i></p>
+            Moore's law is the observation, originally made by the Intel co-founder Gordon E. Moore in 1965, that over the history of computing, the number of transistors on integrated circuits doubles approximately every two years.
+
+ 
                     <br><br>
+
+                     This exponential improvement has dramatically enhanced the impact of digital electronics in every aspect of our society. However there is a physical limit, since this trend is based on our capacity to reduce the size of a transistor on silicon. This limit marks the end of the dominance of the single microprocessor architecture in computing. Since 2003, the new microprocessors stopped getting exponentially faster but only got 4x faster in 10 years. In the meantime, the number of cores per microprocessor has increased in order to maintain the growth in computing power. 
+
+
+
                      <div class="section-content-img">
-                    <img src="img/cours.png" alt="" class="img-responsive cours"/>
+    
                 </div>
                     <br><br>
                 <p class="ligne col-lg-12 col-md-12 col-sm-12 col-xs-12 text-justify titilium">   The basic branching operation is to go to a given address in memory.The implementation is  done by loading the destination address into the PC instead of incrementing its current value.If this branching operation is combined whith a <i>conditional statement</i>,then the programm can select at runtime which part of the code will be executed depending of a given condition. This is the basic implementation for <i>if-then-else</i> and <i>loop</i> 
@@ -135,39 +132,130 @@
 
         <div id="part2">
             <div class="section-title">
-                <h2 class="text-center roboto">What is a conditional statement ?</h2>
+                <h2 class="text-center roboto">What are MIPS ?</h2>
                 <hr class="section-bar">
             </div>
 
             <div class="section-content">
                 <p class="ligne col-lg-12 col-md-12 col-sm-12 col-xs-12 text-justify titilium">
-               The conditional statement is one of the key difference between a calculator and o computer.It allows toexecute some code instead of another code depending on a condition.The first implementation was done by Charles Babbage on the Analytical Engine near 1833.
+          <i>John von Neumann, Contract n. W-670-ORD-4926, Moore School of Electrical Engineering, University of Pennsylvania, 1945. <i>
+
+
+
+         <br>
+
+The original typescript draft by John von Neumann at the origin of the stored-program architecture used in modern computers. A corrected copy is available on the web by Michael D. Godfrey, Stanford University. 
+
+
+
                 </p>
             </div>
         </div>
 
- <!-- >Tableau <-->
+ 
+    
 
-        <div id="part3">
+        <div id="part2">
             <div class="section-title">
-                <h2 class="text-center roboto">Instruction set sum up</h2>
+                <h2 class="text-center roboto">Mechanical Intelligence - Collected Works of A. M. Turing  </h2>
                 <hr class="section-bar">
             </div>
 
             <div class="section-content">
-                <p class="ligne col-lg-12 col-md-12 col-sm-12 col-xs-12 text-justify titilium">
-          For all arithmetic and logical instructions,register 'x' ( bits 2-0) has value  for to 7 respectively for registers A,B,C,D,M1,M2,LR,SP.In binary 'xxx'=000 for A,001 for B, 010 for C,011 for D,100 for M1,101 for M2,110 for LR,111 for SP.Flags Zero, Carry and Negative are updated by the result of the operation.
-               <br>
-          For the ROT instruction,'c'(bit 3) set indicates that the Carry is used in the rotation. 'nnn' (bits 2-0) gives the number of 1-bit left rotation ( 0 to 7).
-            <br>
-          For memory access and control flow instructions, 'xx'(bits 3-2) indicates a value 0 to 3 for registers A,B,C,D. 'yy'(bits 1-0)indicates a value 0 to 3 for registers M1,M2,LR,SP. Flags are not uptdated  by the result of the operation.
-          <br>
-     For the CMP instruction, condition 'ccc' (bits 2-0) are 000 for Zero, 001 for Not Zero, 010 for Carry, 011 for Not Carry, 100 for Negative, 101 for Not Negative, 110 for Not Zero and Not Negative (positive). 
+                <p class="ligne col-lg-12 col-md-12 col-sm-12 col-xs-12 text-justify titilium"
+     >
+     <i>Darrel C. Ince (editor), North-Holland, Elsevier Science Publishers, Amsterdam, 1992.</i>
+
+<p>The collected papers of Alan Turing, the english pioneer researcher in computer architecture, software engineering and artificial intelligence. <p>
+
+
+
+
 
                 </p>
             </div>
         </div>
 
+
+    
+
+
+          <div id="part2">
+            <div class="section-title">
+                <h2 class="text-center roboto">Computer Architecture-A Quantitative APr</h2>
+                <hr class="section-bar">
+            </div>
+
+            <div class="section-content">
+                <p class="ligne col-lg-12 col-md-12 col-sm-12 col-xs-12 text-justify titilium">
+      
+ The first trend for increasing the processing power of a computer is to use multiple processing units instead of one. Most old and modern supercomputers are based on this idea. All new microprocessors include multiple cores instead of a single CPU. There are two basic approaches: micro-parallelism which allows to execute multiple instructions at the same time within a single processor, macro-parallelism that takes advantages of multiple processors and possibly a large number. 
+
+
+
+                </p>
+            </div>
+        </div>
+
+
+       <div id="part2">
+            <div class="section-title">
+                <h2 class="text-center roboto">Cloud computing and artificial intelligence</h2>
+                <hr class="section-bar">
+            </div>
+
+            <div class="section-content">
+                <p class="ligne col-lg-12 col-md-12 col-sm-12 col-xs-12 text-justify titilium">
+      
+Cloud computing is a synonym for distributed computing over the Internet and means the ability to run a program on a possibly huge number of computers. In the near future, there will be tiny computers everywhere constantly monitoring systems, buildings, ecosystems and even human bodies. The cloud will include intelligent agents that will help humans to access and manage this quasi-infinite infosphere. 
+
+
+
+                </p>
+            </div>
+        </div>
+
+    <div id="part2">
+            <div class="section-title">
+                <h2 class="text-center roboto">Promising technologies</h2>
+                <hr class="section-bar">
+            </div>
+
+            <div class="section-content">
+                <p class="ligne col-lg-12 col-md-12 col-sm-12 col-xs-12 text-justify titilium">
+      
+There is active research to explore new promising architectures and technologies: electronic nanolithography, optical and quantum computers, chemical and DNA biocomputers, synthetic neural networks and reconfigurable machines. Most of these trends are exploring the design of nanocomputers whose fundamental parts are no bigger than few nanometers.
+
+
+
+
+                </p>
+            </div>
+        </div>
+
+
+            <div id="part2">
+            <div class="section-title">
+                <h2 class="text-center roboto">What is a quantum computer</h2>
+                <hr class="section-bar">
+            </div>
+
+            <div class="section-content">
+                <p class="ligne col-lg-12 col-md-12 col-sm-12 col-xs-12 text-justify titilium">
+      
+A classical computer works by processing bits that represent ones and zeroes. In contrast, a quantum computer uses quantum bits (qbits) whereby information can exist as both a one and a zero or "superpositions" of the two states at the same time. Therefore, quantum computers can work in parallel rather than sequentially, allowing to solve certain problems orders of magnitude faster.
+
+<br>
+
+
+
+
+
+
+
+                </p>
+            </div>
+        </div>
 
 
     </section>

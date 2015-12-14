@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assembly program</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
+          integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ=="
+          crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"
+            integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ=="
+            crossorigin="anonymous"></script>
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab|Titillium+Web' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="row">
+
+<header>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+               
+                <img src="img/logo_iim.png" alt="" class="col-lg-7 col-md-4 col-sm-4 col-xs-4 "/>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Accueil</a></li>
+                    <li class="dropdown">
+                        <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                           aria-expanded="false">Chapitres <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Chapitre 1</a></li>
+                            <li><a href="#">Chapitre 2</a></li>
+                            <li><a href="#">Chapitre 3</a></li>
+                            <li><a href="#">Chapitre 4</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">A Propos</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+</header>
+
+<section class="container-fluid">
+
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="video-intro">
+        <!--            vidéo d'introduction-->
+        <h2>video</h2>
+    </div>
+</section>
+
+<section class="title container-fluid text-center">
+    <section class="row">
+        <div id="title-chapitre">
+            <h1 class="roboto">A simple assembly program</h1>
+        </div>
+        <div id="intro">
+            <div class="container text-justify titilium">
+
+                 A "Hello World" program has become the traditional first program that many people learn because of its simplicity. Our version writes "Hello!" on 8 digit displays mapped at memory addresses 0x20 to 0x27. For example if you want to show '!' in the first digit, you must write this character at address 0x20.
+
+            </div>
+        </div>
+    </section>
+</section>
+
+<section id="content" class="container">
+    <section class="row">
+
+        <div id="part1">
+            <div class="section-title">
+    
+  
+            </div>
+
+    <!-->Tableau<-->
+
+            <div class="section-content">
+
+           
+                    <br><br>
+                     <div class="section-content-img">
+                   
+                </div>
+                    <br><br>
+                <p class="ligne col-lg-12 col-md-12 col-sm-12 col-xs-12 text-justify titilium">
+                     This program is based on two basic concepts commonly used in programming: loops and conditional statements (cf. page 28). A loop is a sequence of instructions that is continually repeated until a condition is reached.
+
+                    <br>
+
+The program begins by initializing the address of the string and the address of the display. Then it enters a loop of loading a character from memory and displaying it until the character 0x00 (null) is found. Adresses are incremented at each step of the loop. The test is done by checking the Z flag when a new character is read from memory. 
+
+
+                </p>
+
+            </div>
+        </div>
+
+
+       
+
+   
+
+    </section>
+        <div id="test" class="text-center">
+             <button type="button" class="btn btn-warning">TEST YOUR KNOWLEDGE</button>
+        </div>
+
+</section>
+
+<section class="container-fluid">
+    <footer class="text-center roboto">
+        <h3>MOOC - IIM - 2015</h3>
+    </footer>
+</section>
+
+</body>
+</html>

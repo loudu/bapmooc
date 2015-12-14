@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Lab</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
+          integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ=="
+          crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"
+            integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ=="
+            crossorigin="anonymous"></script>
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab|Titillium+Web' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="row">
+
+<header>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+               
+                <img src="img/logo_iim.png" alt="" class="col-lg-7 col-md-4 col-sm-4 col-xs-4 "/>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Accueil</a></li>
+                    <li class="dropdown">
+                        <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                           aria-expanded="false">Chapitres <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Chapitre 1</a></li>
+                            <li><a href="#">Chapitre 2</a></li>
+                            <li><a href="#">Chapitre 3</a></li>
+                            <li><a href="#">Chapitre 4</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">A Propos</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+</header>
+
+<section class="container-fluid">
+
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="video-intro">
+        <!--            vidéo d'introduction-->
+        <h2>video</h2>
+    </div>
+</section>
+
+<section class="title container-fluid text-center">
+    <section class="row">
+        <div id="title-chapitre">
+            <h1 class="roboto">Experiement by yourself how works a computer</h1>
+        </div>
+        <div id="intro">
+            <div class="container text-justify titilium">
+
+          The SRISC8 simulator (next page) allows you to run our simple "Hello!" program example. In a second phase, you will be able to create your own assembly program. The simulator has three main parts: the processor on the top left, a 8-digit display and a keyboard on the bottom left, the main memory on the right 
+
+
+            </div>
+        </div>
+    </section>
+</section>
+
+<section id="content" class="container">
+    <section class="row">
+
+        <div id="part1">
+            <div class="section-title">
+                <h2 class="text-center roboto">Running the "Hello!" program</h2>
+                <hr class="section-bar">
+            </div>
+
+            <div class="section-content">
+                <p class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-justify titilium">
+                
+                    <br><br>
+                
+           
+                </div>
+
+                <p>
+
+                The memory has 32 bytes (0x20) and is initialized with the program at address 0x00 and the "Hello!" string at address 0x10. Each memory cell shows its address, its content both in binary and hexadecimal, and the assembly code for an instruction. 
+
+                    <br><br>
+
+                     A click on the clear button clears all the memory cells. A click on the init button loads the "Hello!" example program
+           
+                 <br>
+
+                 The processor part shows the content of all its registers, including the Program Counter, the Instruction Register and status flags. 
+
+                 <br>
+
+                 The reset button initializes the processor by resetting all its registers. The step button allows to execute the program instruction by instruction. The run button starts the execution while the stop button stops the execution. The current instruction is highlighted in blue in the main memory. 
+
+ </p>
+
+  <!-- >Tableau <-->
+
+
+
+
+            </div>
+        </div>
+
+
+       
+
+        <div id="part2">
+            <div class="section-title">
+                <h2 class="text-center roboto">Create your own assembly program</h2>
+                <hr class="section-bar">
+            </div>
+
+            <div class="section-content">
+                <p class="ligne col-lg-12 col-md-12 col-sm-12 col-xs-12 text-justify titilium">
+               You can input any assembly program from the instruction set, and the simulator will animate the program's execution 
+
+<br>
+
+ In order to create your own program, first clear memory with the clear button, then enter your program by editing memory cells. If you want to enter an instruction, first click on the edit button of the selected address. Then, click on an instruction key (for example ADD) to set the operation code (4 most significant bits), followed by an hexadecimal key (4 least significant bits). For a number or a character, just click on two hexadecimal keys 
+
+
+                </p>
+            </div>
+        </div>
+
+
+
+
+    </section>
+        <div id="test" class="text-center">
+             <button type="button" class="btn btn-warning">TEST YOUR KNOWLEDGE</button>
+        </div>
+
+</section>
+
+<section class="container-fluid">
+    <footer class="text-center roboto">
+        <h3>MOOC - IIM - 2015</h3>
+    </footer>
+</section>
+
+</body>
+</html
