@@ -19,11 +19,12 @@
     <link rel="stylesheet" href="css/style2.css">
 
 </head>
-<body class="row">
+<body>
 
 <header>
     <nav class="navbar navbar-default">
         <div class="container">
+            <div class="row">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
@@ -55,6 +56,7 @@
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
+            </div>
         </div>
         <!-- /.container-fluid -->
     </nav>
@@ -63,10 +65,12 @@
 
 
 <section class="container-fluid">
+  <div class="row">
 
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="video-intro">
         <!--            vidéo d'introduction-->
         <h2>video</h2>
+    </div>
     </div>
 </section>
 
@@ -74,14 +78,10 @@
 <section class="title container-fluid text-center">
     <section class="row">
         
-        <div id="intro">
-            <div class="container text-justify titilium">
- 
-                   <div class="col-md-8 col-lg-8 col-sm-8 col-xs-8">
-
-<div class="row">
-
-    <div class="col-md-6">
+        <div id="intro" class="container">
+          <div class="row">
+                   <div id="re"class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+    <div id="bas"class="col-md-6">
 
          <div class="left">
                  
@@ -90,10 +90,10 @@
 
               <div class="left1">
 
-             <strong>Length</strong><br>
-             <strong>Price</strong><br>
-             <strong>Institution</strong><br>
-             <strong>Instructor</strong><br>
+             <p>Length</p><br>
+             <p>Price</p><br>
+             <p>Institution</p><br>
+             <p>Instructor</p><br>
 
            </div>
 </div>
@@ -104,11 +104,10 @@
 
            <div class="left2">
 
-            <strong> 15 hours</strong><br>
-            <strong> Free</strong><br>
-            <strong>Institute of the internet and multimedia</strong><br>
-            <strong>Jean Claude Heudin</strong><br>
-
+            <p> 15 hours</p><br>
+            <p> Free</p><br>
+            <p>Institute of the internet and multimedia</p><br>
+            <p>Jean Claude Heudin</p><br>
           </div>
 </div>
           </div>
@@ -116,7 +115,7 @@
 </div>
 
 
-<div class="col-md-6">
+<div id="haut"class="col-md-6">
 
   <div class="right">
 <div class="row">
@@ -126,9 +125,9 @@
     <div class="col-md-6">
                   <div class="right1">
  
-                      <strong>Subject</strong><br>
-                      <strong>level</strong><br>
-                      <strong>languages</strong><br>
+                      <p>Subject</p><br>
+                      <p>level</p><br>
+                      <p>languages</p><br>
 
                      </div> 
 
@@ -138,7 +137,9 @@
                  <div class="right2">
 
 
-                     <strong>Computer Science</strong><br> <strong>Introductory</strong><br><strong>English</strong>
+                     <p>Computer Science</p><br> 
+                     <p>Introductory</p><br>
+                     <p>English</p>
                  </div>
 </div>
 </div>
@@ -146,6 +147,7 @@
           </div>
 </div>
 
+</div>
 </div>
 
   <div class="row">
@@ -155,19 +157,16 @@
 
 
 <div class="col-md-4">
+<div class="rating le">
+  <div class="stars rit">
+    <a class="star rated"></a>
+    <a class="star rated"></a>
+    <a class="star rated"></a>
+    <a class="star"></a>
+    <a class="star"></a>
+  </div>
+</div>
 
-<form>
-  <fieldset>
-    <span class="star-cb-group">
-      <input type="radio" id="rating-5" name="rating" value="5" /><label for="rating-5">5</label>
-      <input type="radio" id="rating-4" name="rating" value="4" checked="checked" /><label for="rating-4">4</label>
-      <input type="radio" id="rating-3" name="rating" value="3" /><label for="rating-3">3</label>
-      <input type="radio" id="rating-2" name="rating" value="2" /><label for="rating-2">2</label>
-      <input type="radio" id="rating-1" name="rating" value="1" /><label for="rating-1">1</label>
-      <input type="radio" id="rating-0" name="rating" value="0" class="star-cb-clear" /><label for="rating-0">0</label>
-    </span>
-  </fieldset>
-</form>
 
 </div>
 
@@ -199,7 +198,8 @@
             <h1 class="roboto">ABOUT THIS COURSE</h1>
         </div>
         <div id="intro">
-            <div class="container text-justify titilium">
+          <div class="dev">
+            <div id="fu"class="container text-justify titilium">
  
                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p><br>
 
@@ -209,6 +209,7 @@
 
                       <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.  </p><br>
             </div>
+          </div>
         </div>
     </section>
 </section>
@@ -231,29 +232,26 @@
         </div>
                 
                     <br><br>
-                <p class="ligne col-lg-12 col-md-12 col-sm-12 col-xs-12 text-justify titilium">
-                     
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                  
+                <div id="block-liste" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-justify titilium">
 
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </P>
-                    
+                    <ul id="liste">
 
-                      <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+                      <li>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                      </li>
 
+                      <li>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </p></li>
 
+                       <li>
+                      <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p></li>
 
-                     <p> Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.  </p>
+                        <li>
 
-              
-
-            </div>
-        </div>
-
-
-       
-
-   
+                     <p> Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.  </p></li>
+                    </ul>
+                  </div>
 
     </section>
         
@@ -266,6 +264,7 @@
 </section>
 
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     
     <link rel="javasrcipt" href="style.js">
 </html>
